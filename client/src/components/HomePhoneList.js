@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { BeatLoader } from "react-spinners";
-import { Link, useParams } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 function HomePhoneList() {
   const [phones, setPhones] = useState(null);
   const [isFetching, setIsFetching] = useState(true);
-  const {id} = useParams()
 
   useEffect(() => {
     getData();
