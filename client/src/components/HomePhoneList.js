@@ -28,11 +28,11 @@ function HomePhoneList() {
       ) : (
         <div>
           <h1>Teeechnology!</h1>
-          <ul>
+          <ul className="phones">
             {phones.map((eachPhone) => {
               return (
                 <Link to={`/phones/${eachPhone._id}`}>
-                  <li key={eachPhone._id}>
+                  <li key={eachPhone._id} className="phone-name">
                     <h2>{eachPhone.name}</h2>
                   </li>
                 </Link>
